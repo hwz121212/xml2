@@ -279,7 +279,4 @@
       <UniqueIdentifier>{CD50894F-E39D-379C-A432-6DE6AB2BF388}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="xml2.rc" />
-  </ItemGroup>
 </Project>

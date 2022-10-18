@@ -59,18 +59,6 @@
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>LIBXML_STATIC;WIN32;_WINDOWS;_REENTRANT;HAVE_WIN32_THREADS</PreprocessorDefinitions>
     </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>;WIN32;_DEBUG;_WINDOWS;_REENTRANT;HAVE_WIN32_THREADS;;LibXml2_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;include;include\libxml;</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>.;..;$(SolutionDir)include;$(SolutionDir)thirdparty;</AdditionalIncludeDirectories>
-      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
     <Link>
       <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration);</AdditionalLibraryDirectories>
@@ -100,18 +88,6 @@
       <PreprocessorDefinitions>LIBXML_STATIC;WIN32;_WINDOWS;NDEBUG;_REENTRANT;HAVE_WIN32_THREADS</PreprocessorDefinitions>
       <DebugInformationFormat />
     </ClCompile>
-    <ResourceCompile>
-      <PreprocessorDefinitions>;WIN32;_WINDOWS;NDEBUG;_REENTRANT;HAVE_WIN32_THREADS;;LibXml2_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.;include;include\libxml;</AdditionalIncludeDirectories>
-    </ResourceCompile>
-    <Midl>
-      <AdditionalIncludeDirectories>.;..;$(SolutionDir)include;$(SolutionDir)thirdparty;</AdditionalIncludeDirectories>
-      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
-      <HeaderFileName>%(Filename).h</HeaderFileName>
-      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
-      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
-      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
-    </Midl>
     <Link>
       <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(SolutionDir)lib\$(Configuration);</AdditionalLibraryDirectories>
@@ -221,7 +197,6 @@
     <ClCompile Include="src\xpath.c" />
     <ClCompile Include="src\xpointer.c" />
     <ClCompile Include="src\xzlib.c" />
-    <ResourceCompile Include="xml2.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

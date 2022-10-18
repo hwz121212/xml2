@@ -272,9 +272,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="xml2.rc" />
-  </ItemGroup>
-  <ItemGroup>
     <Filter Include="Header Files">
       <UniqueIdentifier>{7AD3C653-750D-38D6-9620-4A9FA3E323BB}</UniqueIdentifier>
     </Filter>
